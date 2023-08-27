@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  
+  header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    color: #e74c3c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: #e74c3c dotted;
+  }
+  
+  nav ul {
+    padding: 0;
+    transition: 1s;
+  }
+
+  nav li {
+    display: inline; /* establece que un elemento ocupará el espacio del 
+    contenido del mismo y el siguiente elemento se situará a la derecha */
+    transition: 1s;
+    padding: 15px;
+    margin-left: 15px;
+    border: #e74c3c solid;
+    background-color: white;
+
+  }
+
+  nav li:hover{
+    background-color: #f5a8a0;
+  }
+  
+  /* Estilos para la sección principal */
+
+  .titulo{
+    text-align: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0px;
+    font-size: 1.8em;
+  }
+  
+  main {
+    padding: 20px;
+    width: 70%; /* El contenido principal ocupa el 70% del ancho */
+    float: left;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+
+  main img{
+    width: 450px;
+  }
+ 
+  section {
+    display: flex;  /* crea las cajas adaptables donde estan los articulos */
+    flex-wrap: wrap; /* Asegura que los artículos se envuelvan cuando el ancho es insuficiente */
+    justify-content: space-between; /* espacio uniforme entre elementos */
+    align-items: center; /* alinea verticalmente los elementos */
+  }
+  
+   article {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 10px;
+    border-radius: 8px;
+    clear: both; /* Limpia el float */
+    transition: 1s;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: grey;
+    padding-top: 5px;
+  }
+
+  main h3{
+    color: #e74c3c;
+  }
+
+  #tituloCarta{
+    text-align: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0px;
+    font-size: 1.8em;
+  }
+
+  .tipoPlatos{
+    background-color: #f5a8a0;
+    color: white;
+    font-size: 1.15em;
+    padding-left: 10px;
+  }
+
+  .info1 {
+    flex: 100%; /* Hace que el artículo ocupe todo el ancho sin encogerse ni crecer */
+    text-align: left;
+    padding-top: 0;
+}
+
+  .info1:hover{
+    background-color: #f8f8f8;
+    color: black;
+    cursor: auto;
+  }
+
+  .info1 h2{
+    text-align: center;
+    font-size: 1.8em;
+    color: #e74c3c;
+  }
+
+  form{
+    background-color: #f8f8f8;
+    padding: 15px;
+    height: 1150px;
+  }
+
+  form div{
+    font-family:sans-serif;
+    padding: 10px;
+  }
+
+  #aclaracion{
+    color: rgb(152, 147, 147);
+  }
+
+
+  /* Estilos para la barra lateral */
+  
+  aside {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    margin-top: 12px;
+  }
+
+  aside div{
+    margin-bottom: 35px;
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+   
+  aside h2 {
+    font-size: 1.8em;
+    color: #e74c3c;
+    text-align: center;
+  }
+
+  aside h3{
+    text-align: center;
+  }
+
+  aside img{
+    width: 50%;
+  }
+
+  #asidePegado{
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+
+  #cestaAside{
+    width: 30%;
+  }
+
+  #enviar{
+    padding: 12px;
+  }
+
+  #textoCesta{
+    text-align: center;
+    color: rgb(242, 169, 81);
+  }
+
+  #textoIndicacionesFormulario{
+    text-align: center;
+    color: rgb(242, 169, 81);
+    background-color: #f8f8f8;
+    padding: 15px;
+  }
+
+  
+  /* Estilos para el pie de página */
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Estilos para imágenes */
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para el clearfix */
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Estilos para la respuesta al hover */
+  
+  article:hover {
+    background-color: #f5a8a0;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Estilos para enlaces en el pie de página */
+  
+  footer a {
+    color: #e74c3c;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
