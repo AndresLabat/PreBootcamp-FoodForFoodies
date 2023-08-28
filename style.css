@@ -126,7 +126,6 @@ body {
   form{
     background-color: #f8f8f8;
     padding: 15px;
-    height: 1150px;
   }
 
   form div{
@@ -136,6 +135,53 @@ body {
 
   #aclaracion{
     color: rgb(152, 147, 147);
+  }
+
+  #listadoDelPedido{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 10px;
+    border-radius: 8px;
+    clear: both; /* Limpia el float */
+  }
+
+  #textoDorado{
+    color: rgb(242, 169, 81);
+  }
+
+  #metodoDePago{
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 10px;
+    border-radius: 8px;
+    clear: both; /* Limpia el float */
+  }
+
+  #metodoDePago h3{
+    text-align: center;
+  }
+
+  #datosEnvio{
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 10px;
+    border-radius: 8px;
+    clear: both; /* Limpia el float */
+  }
+
+  #datosEnvio h3{
+    text-align: center;
+  }
+
+  h4{
+    font-size: 1.5em;
+    margin-top: 0;
+    color: grey;
+    padding-top: 5px;
   }
 
 
@@ -181,6 +227,14 @@ body {
 
   #cestaAside{
     width: 30%;
+  }
+
+  .spanCreadoConJS button{
+    margin: 5px;
+  }
+
+  .botonPedido{
+    padding: 5px;
   }
 
   #enviar{

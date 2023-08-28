@@ -12,9 +12,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="form.html">Reservar mesa</a></li>
                 <li><a href="info.html">Conócenos</a></li>
-                <li><a href="create.html">Realizar pedido</a></li>
+                <li><a href="form.html">Reservar mesa</a></li>
+                <li><a href="create.html">Pedido online</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +25,7 @@
         <div id="tituloCarta"><h2>CARTA</h2></div>
         <div class="tipoPlatos"><h2>PLATOS PRINCIPALES:</h2></div>
         <section>
-            <article>
+            <article draggable="true" id="hamburguesaId">
                 <h3>Hamburguesa triple F</h3>
                 <p>Nuestra Hamburguesa Premium es mucho más que una simple hamburguesa, 
                 cada bocado es una explosión de sabor y textura cuidadosamente equilibrada</p>   
@@ -33,14 +33,14 @@
                 <p><em>carne de res, pan artesanal, queso, salsa burguer...</em></p>
                 <p id="hamburguesaPrecio"><b>12.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="pizzaId">
                 <h3>Pizza triple F</h3>
                 <p>¡Explora el sabor auténtico de Italia con nuestra Exquisita Pizza Artesanal</p>
                 <div><img src="imagenes/Carta/menu pizza.jpg" alt="imagen pizza"></div>
                 <p><em>seleccion de quesos, tomate, pepperoni, aceitunas...</em></p>
                 <p id="pizzaPrecio"><b>11.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="pescadoId">
                 <h3>Pescado fresco</h3>
                 <p>El protagonista de nuestro plato es un pescado fresco, capturado del mar en su punto máximo 
                 de frescura dorado a la parrilla</p>
@@ -48,7 +48,7 @@
                 <p><em>Atun, cebolla, pimiento, berengena...</em></p>
                 <p id="pescadoPrecio"><b>15.50</b></p>
             </article>
-            <article>
+            <article draggable="true" id="salteadoId">
                 <h3>Salteado de verduras</h3>
                 <p>Nuestro Delicioso Salteado de Verduras es una celebración de los sabores naturales y la variedad 
                 de la madre naturaleza</p>
@@ -56,14 +56,14 @@
                 <p><em>zanahoria, pimiento, jengibre, salsa de soja...</em></p>
                 <p id="salteadoPrecio"><b>6.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="sushiId">
                 <h3>Sushi</h3>
                 <p>Embárcate en un viaje culinario a Japón con nuestra Exquisita Selección de Sushi Artesanal</p>
                 <div><img src="imagenes/Carta/sushi.jpg" alt="imagen sushi"></div>
                 <p><em>arroz, salmon, alga nori, pepino...</em></p>
                 <p id="sushiPrecio"><b>13.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="tacosId">
                 <h3>Tacos</h3>
                 <p>Cada taco es una celebración de la tradición y la pasión mexicana por la comida</p>
                 <div><img src="imagenes/Carta/tacos.jpg" alt="imagen tacos"></div>
@@ -75,14 +75,14 @@
             <div class="tipoPlatos"><h2>POSTRES:</h2></div>
 
         <section>
-            <article>
+            <article draggable="true" id="donutsId">
                 <h3>Donuts</h3>
                 <p>hemos creado una selección única de donuts que son un verdadero placer para el paladar</p>
                 <div><img src="imagenes/Carta/donuts.jpg" alt="imagen donuts"></div>
                 <p><em>azucar, chocolate blanco, coco...</em></p>
                 <p id="donutsPrecio"><b>6.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="cheesecakeId">
                 <h3>Cheesecake</h3>
                 <p>Para aquellos que buscan un toque de aventura en cada bocado, ofrecemos una variedad de 
                 opciones de toppings</p>
@@ -90,30 +90,30 @@
                 <p><em>galleta, queso fresco, frutos rojos...</em></p>
                 <p id="cheesecakePrecio"><b>5.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="muffinsId">
                 <h3>Muffins</h3>
                 <p> Cada muffin es una obra de arte de repostería, horneada con amor y dedicación para brindarte un 
                 momento de alegría y satisfacción</p>
                 <div><img src="imagenes/Carta/muffin.jpg" alt="imagen muffin"></div>
                 <p><em>zanahoria, nueces, chocolate...</em></p>
-                <p id="Precio"><b>4.50</b></p>
+                <p id="muffinsPrecio"><b>4.50</b></p>
             </article>
-            <article>
+            <article draggable="true" id="pancakesId">
                 <h3>Pancakes</h3>
                 <p>La base de nuestros pancakes es una mezcla suave y esponjosa, creada con ingredientes frescos y auténticos</p>
                 <div><img src="imagenes/Carta/pancakes.jpg" alt="imagen pancakes"></div>
                 <p><em>chocolate, platano, leche...</em></p>
-                <p id="Precio"><b>6.95</b></p>
+                <p id="pancakesPrecio"><b>6.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="tartaId">
                 <h3>Tarta banofee</h3>
                 <p>La base de nuestra tarta es un crust delicado y crujiente, que proporciona la estructura perfecta para los 
                 sabores que se desarrollarán en cada bocado</p>
                 <div><img src="imagenes/Carta/tarta.jpg" alt="imagen tarta"></div>
                 <p><em>galleta, sirope, huevo...</em></p>
-                <p id="Precio"><b>4.95</b></p>
+                <p id="tartaPrecio"><b>4.95</b></p>
             </article>
-            <article>
+            <article draggable="true" id="heladoId">
                 <h3>Helado</h3>
                 <p>Cada copa o cono es una expresión de creatividad y dedicación, con decoraciones y toppings 
                 que transforman un simple helado en una experiencia</p>
@@ -125,12 +125,19 @@
     </main>
 
     <aside id="asidePegado">
-        <div><h2>Tu pedido</h2></div>
-        <div><p id="textoCesta">PINCHA Y ARRASTRA LOS PLATOS QUE QUIERAS HASTA NUESTRA CESTA PARA AÑADIRLOS AL PEDIDO</p></div>
-        <div><a href="shopping cart.html"><img src="imagenes/cesta.jpg" alt="cesta" id="cestaAside"></a></div>
+        <div><h2>Tu pedido [<span id="contenedorCantidadArticulos">0</span>]</h2></div>
+        <div>
+            <p id="textoCesta">ARRASTRA LOS PLATOS QUE QUIERAS HASTA NUESTRA CESTA PARA AÑADIRLOS AL PEDIDO</p>
+            <a href="shopping cart.html"><img src="imagenes/cesta.jpg" alt="cesta" id="cestaAside"></a>
+        </div>
         <div>
             <h3>Detalles del pedido:</h3>
-            <p>Aqui se van a ir sumando los detalles del pedido</p>
+            <p id="textoDrop"></p>
+            <p><b>Precio total: <span id="precioTotal">0.00</span>€</b></p>
+            <span>
+                <button class="botonPedido" onclick="borrarPedido()">Borrar pedido</button>
+                <button class="botonPedido"><a href="shopping cart.html">Tramitar pedido</a></button>
+            </span>
         </div>
     </aside>
     
@@ -140,6 +147,6 @@
         <p><b>Andres Labat Beltran</b> - 23/08/2023 - &copy; - <a href="#top">Volver arriba</a></p>
     </footer>
 
-    <script src="Javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

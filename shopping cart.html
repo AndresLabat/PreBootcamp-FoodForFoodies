@@ -12,9 +12,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="form.html">Reservar mesa</a></li>
                 <li><a href="info.html">Conócenos</a></li>
-                <li><a href="create.html">Realizar pedido</a></li>
+                <li><a href="form.html">Reservar mesa</a></li>
+                <li><a href="create.html">Pedido online</a></li>
             </ul>
         </nav><br>
         <a href="shopping cart.html"><img src="imagenes/cesta.jpg" alt="cesta" width="3%"></a>
@@ -26,9 +26,91 @@
         <div class="titulo">
             <h2>Detalles del pedido</h2>
         </div>   
-        <div id="contenedorPrecioTotal"></div>
+        <div id="listadoDelPedido">
+            <h3>FACTURA SIMPLIFICADA</h3>
+            <p id="textoDorado">Aquí saldran los detalles del pedido pero aun no sé como guardar la informacion que necesito traer a este "div" entre HTMLs, se actualizara esta parte en el futuro</p>
+            <p>Articulo 1, precio: 0.00€</p>
+            <p>Articulo 2, precio: 0.00€</p>
+            <p>Articulo 3, precio: 0.00€</p>
+            <p>...</p>
+            <p><b>Precio Total: 0.00€</b></p>
+        </div>
 
-    
+        <div id="datosEnvio">
+            <h3>DATOS DEL ENVIO</h3>
+            <div>
+                <p id="textoIndicacionesFormulario">Rellena nuestro formulario para 
+                facilitarnos que todo este a vuestro gusto y a la hora indicada, una vez terminado, 
+                te enviaremos un correo de confirmación en la dirección que nos indiques, 
+                esperamos que disfruteis de la experiencia.</p>
+            </div>
+            <form action="https://webinventada.com" class="formulario">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="hora">Hora de recepción:</label>
+                    <input type="time" name="hora" id="hora"><br><br>
+                    <label for="text" id="aclaracion">*Nuestro horario de apertura es de 10:00 a 16:30 y de 20:00 a 00:30 horas</label>
+                </div>
+                <div>
+                    <label for="picante">Preferencia con el picante:</label>
+                    <input type="range" name="picante" id="picante">
+                </div>
+                <div>
+                    <label for="motivo">Sugerencias y alergias:</label><br><br>
+                    <textarea name="motivo" id="motivo" cols="60" rows="6" placeholder="Indicanos si algun comensal tiene alergias o cualquier sugerencia que querais probar"></textarea>
+                </div>
+                <div>
+                    <label for="descuento">Codigo de descuento:</label>
+                    <input type="text" name="descuento" id="descuento">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
+        </div>
+
+        <div id="metodoDePago">
+            <h3>METODO DE PAGO</h3>
+            <section>
+                <article>
+                    <h4>PayPal</h4>
+                    <img src="imagenes/logo paypal.jpg" alt="imagen logo PayPal">
+                    <p><b><em>PayPal</em></b> es un metodo muy seguro ya que actúa como intermediario, 
+                    protegiendo tus datos financieros de posibles amenazas en línea. 
+                    Tus detalles personales y financieros no se comparten con los vendedores</p>
+                </article>
+                <article>
+                    <h4>Tarjeta</h4>
+                    <img src="imagenes/pago tarjeta.jpg" alt="imagen logo PayPal">
+                    <p>El proceso es sencillo, se nos pide ingresar los detalles de nuestra tarjeta, 
+                    como el número de tarjeta, la fecha de vencimiento y el código de seguridad. 
+                    Luego, esta información se utiliza para verificar y procesar la transacción</p>
+                </article>
+                <article>
+                    <h4>Efectivo</h4>
+                    <img src="imagenes/pago efectivo.jpg" alt="imagen pago en efectivo">
+                    <p>los pagos en efectivo siguen siendo una forma importante de intercambio de valor 
+                    en la sociedad actual. Aunque vivimos en una era digital, el efectivo mantiene su 
+                    relevancia al proporcionar una opción tangible y versátil para nuestras transacciones diarias.</p>
+                </article>
+            </section>
+        </div>
+ 
     </main>
 
     <aside>
@@ -68,6 +150,6 @@
         <p><b>Andres Labat Beltran</b> - 23/08/2023 - &copy; - <a href="#top">Volver arriba</a></p>
     </footer>
 
-    <script src="Javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
