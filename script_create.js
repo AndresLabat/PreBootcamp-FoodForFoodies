@@ -152,3 +152,4 @@ function borrarPlato() {
     contenedorCantidadArticulos.textContent = cantidadArticulos.length;
 }
 
+

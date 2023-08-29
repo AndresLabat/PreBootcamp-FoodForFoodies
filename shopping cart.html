@@ -44,7 +44,7 @@
                 te enviaremos un correo de confirmación en la dirección que nos indiques, 
                 esperamos que disfruteis de la experiencia.</p>
             </div>
-            <form action="https://webinventada.com" class="formulario">
+            <form action="thank you.html" class="formulario">
                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre">
@@ -71,6 +71,10 @@
                     <input type="range" name="picante" id="picante">
                 </div>
                 <div>
+                    <label for="sal">Preferencia con la sal:</label>
+                    <input type="range" name="sal" id="sal">
+                </div>
+                <div>
                     <label for="motivo">Sugerencias y alergias:</label><br><br>
                     <textarea name="motivo" id="motivo" cols="60" rows="6" placeholder="Indicanos si algun comensal tiene alergias o cualquier sugerencia que querais probar"></textarea>
                 </div>
@@ -87,21 +91,24 @@
         <div id="metodoDePago">
             <h3>METODO DE PAGO</h3>
             <section>
-                <article>
+                <article id="PayPal">
+                    <span id="contenedorTextoPaypal"></span>
                     <h4>PayPal</h4>
                     <img src="imagenes/logo paypal.jpg" alt="imagen logo PayPal">
                     <p><b><em>PayPal</em></b> es un metodo muy seguro ya que actúa como intermediario, 
                     protegiendo tus datos financieros de posibles amenazas en línea. 
                     Tus detalles personales y financieros no se comparten con los vendedores</p>
                 </article>
-                <article>
+                <article id="Tarjeta">
+                    <span id="contenedorTextoTarjeta"></span>
                     <h4>Tarjeta</h4>
                     <img src="imagenes/pago tarjeta.jpg" alt="imagen logo PayPal">
                     <p>El proceso es sencillo, se nos pide ingresar los detalles de nuestra tarjeta, 
                     como el número de tarjeta, la fecha de vencimiento y el código de seguridad. 
                     Luego, esta información se utiliza para verificar y procesar la transacción</p>
                 </article>
-                <article>
+                <article id="Efectivo">
+                    <span id="contenedorTextoEfectivo"></span>
                     <h4>Efectivo</h4>
                     <img src="imagenes/pago efectivo.jpg" alt="imagen pago en efectivo">
                     <p>los pagos en efectivo siguen siendo una forma importante de intercambio de valor 
@@ -150,6 +157,6 @@
         <p><b>Andres Labat Beltran</b> - 23/08/2023 - &copy; - <a href="#top">Volver arriba</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script_shopping cart.js"></script>
 </body>
 </html>
