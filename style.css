@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: all 1s
   }
   
   /* Estilos para el encabezado */
@@ -18,26 +19,40 @@ body {
     color: #e74c3c;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: #e74c3c dotted;
+    margin: 0; /* Elimina el margen superior e inferior para estar alineado verticalmente */
   }
-  
+
+  nav {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Añade un poco de espaciado al nav */
+  }
+
   nav ul {
     padding: 0;
-    transition: 1s;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos en la misma línea */
   }
 
   nav li {
-    display: inline; /* establece que un elemento ocupará el espacio del 
-    contenido del mismo y el siguiente elemento se situará a la derecha */
     transition: 1s;
     padding: 15px;
-    margin-left: 15px;
+    margin-right: 25px;
     border: #e74c3c solid;
     background-color: white;
-
   }
 
   nav li:hover{
     background-color: #f5a8a0;
+  }
+
+  nav img{
+    width: 30%;
+    display: block; /* Cambia la imagen a bloque para que ocupe el ancho del contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del enlace */
+    height: auto; /* Mantiene la proporción de la imagen */
   }
   
   /* Estilos para la sección principal */
@@ -90,7 +105,7 @@ body {
     color: #e74c3c;
   }
 
-  #tituloCarta{
+  .titulo{
     text-align: center;
     background-color: #e74c3c;
     color: white;
@@ -131,6 +146,9 @@ body {
   form div{
     font-family:sans-serif;
     padding: 10px;
+  }
+  .formulario{
+    border-radius: 8px;
   }
 
   #aclaracion{
@@ -188,6 +206,27 @@ body {
     font-size: 1.5em;
     color: white;
   }
+  
+  #textoIndicacionesFormulario{
+    text-align: center;
+    color: rgb(242, 169, 81);
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  #textoAgradecimiento{
+    text-align: center;
+    color: rgb(242, 169, 81);
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  #imgGracias{
+    width: 100%;
+    height: auto;
+  }
 
 
   /* Estilos para la barra lateral */
@@ -244,18 +283,14 @@ body {
 
   #enviar{
     padding: 12px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: #333 solid;
   }
 
   #textoCesta{
     text-align: center;
     color: rgb(242, 169, 81);
-  }
-
-  #textoIndicacionesFormulario{
-    text-align: center;
-    color: rgb(242, 169, 81);
-    background-color: #f8f8f8;
-    padding: 15px;
   }
 
   
@@ -280,6 +315,7 @@ body {
   /* Estilos para el clearfix */
   
   .clearfix::after {
+    /* ::after indica que contenido que se agrega despues, en este caso de .clearfix */
     content: "";
     display: table;
     clear: both;

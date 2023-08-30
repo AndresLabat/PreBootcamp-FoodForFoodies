@@ -151,5 +151,3 @@ function borrarPlato() {
     const contenedorCantidadArticulos = document.getElementById("contenedorCantidadArticulos");
     contenedorCantidadArticulos.textContent = cantidadArticulos.length;
 }
-
-

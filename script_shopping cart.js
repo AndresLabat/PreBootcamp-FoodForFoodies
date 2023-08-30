@@ -6,8 +6,6 @@ const articleTarjeta = document.getElementById("Tarjeta");
 const contenedorTextoTarjeta = document.getElementById("contenedorTextoTarjeta");
 
 const articleEfectivo = document.getElementById("Efectivo");
-const contenedorTextoEfectivo = document.getElementById("contenedorTextoEfectivo");
-
 
 // Función para mostrar el texto cuando el ratón entre en el artículo
 function mostrarTextoPaypal() {
@@ -24,13 +22,6 @@ function mostrarTextoTarjeta() {
     contenedorTextoTarjeta.appendChild(pCreado);
 }
 
-function mostrarTextoEfectivo() {
-    const pCreado = document.createElement("p");
-    pCreado.classList.add("noDisponible"); // Agrega class
-    pCreado.textContent = "ABONAR EFECTIVO AL REPARTIDOR";
-    contenedorTextoEfectivo.appendChild(pCreado);
-}
-
 // Función para eliminar el texto cuando el ratón salga del artículo
 function ocultarTextoPaypal() {
     contenedorTextoPaypal.innerHTML = "";
@@ -40,8 +31,12 @@ function ocultarTextoTarjeta() {
     contenedorTextoTarjeta.innerHTML = "";
 }
 
-function ocultarTextoEfectivo() {
-    contenedorTextoEfectivo.innerHTML = "";
+function cambiarBackground(){
+    if(articleEfectivo.style.backgroundColor === "rgb(245, 168, 160)"){
+        articleEfectivo.style.backgroundColor = "#f8f8f8";
+    }else{
+        articleEfectivo.style.backgroundColor = "#f5a8a0";
+    }
 }
 
 
@@ -52,5 +47,5 @@ articlePayPal.addEventListener("mouseleave", ocultarTextoPaypal);
 articleTarjeta.addEventListener("mouseenter", mostrarTextoTarjeta);
 articleTarjeta.addEventListener("mouseleave", ocultarTextoTarjeta);
 
-articleEfectivo.addEventListener("mouseenter", mostrarTextoEfectivo);
-articleEfectivo.addEventListener("mouseleave", ocultarTextoEfectivo);
+articleEfectivo.addEventListener("click", cambiarBackground);
+
