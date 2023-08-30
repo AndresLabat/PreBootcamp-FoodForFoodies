@@ -1,3 +1,4 @@
+
 # Proyecto-preBootcamp-Geekshubs-Academy
 Pagina Web del restaurante Food For Foodies con carrito de la compra dinámico
 
@@ -10,8 +11,7 @@ Pagina Web del restaurante Food For Foodies con carrito de la compra dinámico
 En esta aplicación, podrás experimentar el proceso de comprar alimentos de una manera interactiva. Arrastra los productos desde el mostrador y suéltalos 
 en el carrito de compra. El sistema calculará automáticamente el total de la compra y lo mostrará en la parte superior de la página.
 
-Además, he implementado una función adicional que te permite eliminar productos del carrito. Simplemente haz clic en el botón "Eliminar" junto al producto
-y verás cómo se ajusta el total de compra en tiempo real.
+Además, he implementado una función adicional que te permite eliminar productos del carrito. Simplemente haz clic en el botón "Eliminar" junto al producto y verás cómo se ajusta el total de compra en tiempo real.
 
 ## Tecnologías Utilizadas
 
@@ -45,7 +45,7 @@ Contacto: andreslabat89@gmail.com.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [Licencia]. Puedes ver más detalles en el archivo [LICENSE.md].
+Este proyecto está bajo la Licencia MIT License. Puedes ver más detalles en el archivo `LICENSE`.
 
 ## Agradecimientos
 
