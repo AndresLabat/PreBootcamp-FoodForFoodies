@@ -36,25 +36,33 @@
         
         <form action="thank you.html" class="formulario">
             <div>
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">*Nombre:</label>
                 <input type="text" name="nombre" id="nombre" required>
             </div>
             <div>
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" name="apellidos" id="apellidos" required>
+                <input type="text" name="apellidos" id="apellidos">
             </div>
             <div>
-                <label for="telefono">Teléfono:</label>
+                <label for="telefono">*Teléfono:</label>
                 <input type="tel" name="telefono" id="telefono" required>
             </div>
             <div>
-                <label for="email">Correo electrónico:</label>
+                <label for="email">*Correo electrónico:</label>
                 <input type="email" name="email" id="email" required>
             </div>
             <div>
-                <label for="contraseña">Contraseña:</label>
-                <input type="password" name="contraseña" id="contraseña"><br><br>
-                <label for="text" id="aclaracion">*Solo para empresas</label>
+                <label for="numero">*Número de personas:</label>
+                <input type="number" id="numero" required>
+            </div>
+            <div>
+                <label for="fecha">*Fecha:</label>
+                <input type="date" name="fecha" id="fecha" required>
+            </div>
+            <div>
+                <label for="hora">*Hora:</label>
+                <input type="time" name="hora" id="hora" required><br><br>
+                <label for="text" id="aclaracion">Nuestro horario de apertura es de 10:00 a 16:30 y de 20:00 a 00:30 horas</label>
             </div>
             <div>
                 <label for="tipo">Tipo de visita:</label><br><br>
@@ -64,34 +72,18 @@
                 <label for="profesional">Profesional</label>
             </div>
             <div>
-                <label for="numero">Número de personas:</label>
-                <input type="number" id="numero" required>
-            </div>
-            <div>
-                <label for="fecha">Fecha:</label>
-                <input type="date" name="fecha" id="fecha" required>
-            </div>
-            <div>
-                <label for="hora">Hora:</label>
-                <input type="time" name="hora" id="hora" required><br><br>
-                <label for="text" id="aclaracion">*Nuestro horario de apertura es de 10:00 a 16:30 y de 20:00 a 00:30 horas</label>
-            </div>
-            <div>
-                <label for="eligeEspacio">Elige nuestro espacio:</label><br><br>
-                <input type="radio" name="espacio" id="salon">
+                <label for="eligeEspacio">*Elige nuestro espacio:</label><br><br>
+                <input type="radio" name="espacio" id="salon" required>
                 <label for="ocio">Salón comedor</label><br>
-                <input type="radio" name="espacio" id="terraza">
+                <input type="radio" name="espacio" id="terraza" required>
                 <label for="profesional">Terraza frente al mar</label><br>
-                <input type="radio" name="espacio" id="eventos">
-                <label for="profesional">Espacio exclusivo para eventos</label>
+                <input type="radio" name="espacio" id="eventos" required>
+                <label for="profesional">Espacio exclusivo para eventos</label><br><br>
+                <label for="text" id="aclaracion">Los tienes detallados a la derecha de la pantalla</label>
             </div>
             <div>
                 <label for="color">Color favorito del mantel:</label>
                 <input type="color" name="color" id="color">
-            </div>
-            <div>
-                <label for="picante">Preferencia con el picante:</label>
-                <input type="range" name="picante" id="picante">
             </div>
             <div>
                 <label for="motivo">Sugerencias y alergias:</label><br><br>

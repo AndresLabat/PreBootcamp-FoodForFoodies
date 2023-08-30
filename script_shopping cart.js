@@ -32,10 +32,10 @@ function ocultarTextoTarjeta() {
 }
 
 function cambiarBackground(){
-    if(articleEfectivo.style.backgroundColor === "rgb(245, 168, 160)"){
+    if(articleEfectivo.style.backgroundColor === "rgb(127, 255, 174)"){
         articleEfectivo.style.backgroundColor = "#f8f8f8";
     }else{
-        articleEfectivo.style.backgroundColor = "#f5a8a0";
+        articleEfectivo.style.backgroundColor = "rgb(127, 255, 174)";
     }
 }
 
