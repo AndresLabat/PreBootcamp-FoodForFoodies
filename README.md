@@ -8,8 +8,7 @@ Pagina Web del restaurante Food For Foodies con carrito de la compra dinámico
 
 ## Funcionamiento
 
-En esta aplicación, podrás experimentar el proceso de comprar alimentos de una manera interactiva. Arrastra los productos desde el mostrador y suéltalos 
-en el carrito de compra. El sistema calculará automáticamente el total de la compra y lo mostrará en la parte superior de la página.
+En esta aplicación, podrás experimentar el proceso de comprar alimentos de una manera interactiva. Arrastra los productos desde el mostrador y suéltalos en el carrito de compra. El sistema calculará automáticamente el total de la compra y lo mostrará en la barra lateral situada a la derecha de la página.
 
 Además, he implementado una función adicional que te permite eliminar productos del carrito. Simplemente haz clic en el botón "Eliminar" junto al producto y verás cómo se ajusta el total de compra en tiempo real.
 
@@ -23,8 +22,7 @@ Además, he implementado una función adicional que te permite eliminar producto
 
 ## Instrucciones de Uso
 
-1. Clona este repositorio en tu máquina local usando el siguiente comando:
-   git clone 
+1. Clona este repositorio en tu máquina local usando el siguiente comando: git clone.
 
 2. Abre el archivo `index.html` en tu navegador web para comenzar a explorar la aplicación.
 
