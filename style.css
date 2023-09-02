@@ -97,14 +97,6 @@ body {
     transition: 1s;
   }
 
-  #iframeContenedorExterno {
-    width: 80%;
-    margin: 0 auto; /* Centrar horizontalmente */
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    margin: 10px;
-  }
-
   #iframeContenedorInterno {
     position: relative;
     width: 80%; /* Ancho del contenedor interno */
@@ -334,6 +326,10 @@ body {
     position: fixed;
     right: 0;
     box-sizing: border-box; /* Incluye el padding en el ancho total */
+    overflow-y: scroll; /* muestra una barra de desplazamiento vertical */
+    max-height: 80vh; /* como se le añaden elementos dinamicamente y crece, 
+    hay que ponerle una altura maxima, de esta forma ya podemos desplazarnos 
+    por la barra vertical */
   }
 
   #cestaAside{
