@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food for Foodies</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Food for Foodies</h1>
@@ -25,10 +27,11 @@
     <main>
         <div class="titulo">
             <h2>Detalles del pedido</h2>
-        </div>   
+        </div>
         <div id="listadoDelPedido">
             <h3>FACTURA SIMPLIFICADA</h3>
-            <p id="textoDorado">Aquí saldran los detalles del pedido pero aun no sé como guardar la información que necesito traer a este "div" entre HTMLs, se actualizará esta parte en el futuro</p>
+            <p id="textoDorado">Aquí saldran los detalles del pedido pero aun no sé como guardar la información que
+                necesito traer a este "div" entre HTMLs, se actualizará esta parte en el futuro</p>
             <p>Artículo 1, precio: 0.00€</p>
             <p>Artículo 2, precio: 0.00€</p>
             <p>Artículo 3, precio: 0.00€</p>
@@ -39,10 +42,10 @@
         <div id="datosEnvio">
             <h3>DATOS DEL ENVÍO</h3>
             <div>
-                <p id="textoIndicacionesFormulario">Rellena nuestro formulario para 
-                facilitarnos que todo esté a vuestro gusto y a la hora indicada, una vez terminado, 
-                te enviaremos un correo de confirmación en la dirección que nos indiques, 
-                esperamos que disfruteis de la experiencia.</p>
+                <p id="textoIndicacionesFormulario">Rellena nuestro formulario para
+                    facilitarnos que todo esté a vuestro gusto y a la hora indicada, una vez terminado,
+                    te enviaremos un correo de confirmación en la dirección que nos indiques,
+                    esperamos que disfruteis de la experiencia.</p>
             </div>
             <form action="thank you.html" class="formulario">
                 <div>
@@ -64,7 +67,8 @@
                 <div>
                     <label for="hora">Hora a la que te gustaría recibir el pedido*</label>
                     <input type="time" name="hora" id="hora" required><br><br>
-                    <label for="text" id="aclaracion">Nuestro horario de apertura es de 10:00 a 16:30 y de 20:00 a 00:30 horas</label>
+                    <label for="text" id="aclaracion">Nuestro horario de apertura es de 10:00 a 16:30 y de 20:00 a 00:30
+                        horas</label>
                 </div>
                 <div>
                     <label for="picante">Preferencia con el picante:</label>
@@ -76,44 +80,46 @@
                 </div>
                 <div>
                     <label for="motivo">Sugerencias y alergias:</label><br><br>
-                    <textarea name="motivo" id="motivo" cols="60" rows="6" placeholder="Indícanos si algun comensal tiene alergias o cualquier sugerencia que querais probar"></textarea>
+                    <textarea name="motivo" id="motivo" cols="60" rows="6"
+                        placeholder="Indícanos si algun comensal tiene alergias o cualquier sugerencia que querais probar"></textarea>
                 </div>
                 <div>
                     <label for="descuento">Codigo de descuento:</label>
                     <input type="text" name="descuento" id="descuento">
                 </div>
-                
-        <div id="metodoDePago">
-            <h3>MÉTODO DE PAGO</h3>
-            <p id="textoIndicacionesFormulario">Selecciona el método de pago que te 
-            sea mas cómodo en base a tus necesidades, puedes dejarlo ya pagado, bien 
-            por tarjeta o bien por Paypal, o pagárselo en efectivo a nuestro repartidor.</p>
-            <section>
-                <article id="PayPal">
-                    <span id="contenedorTextoPaypal"></span>
-                    <h4>PayPal</h4>
-                    <img src="imagenes/logo paypal.jpg" alt="imagen logo PayPal">
-                    <p><b><em>PayPal</em></b> es un método muy seguro ya que actúa como intermediario, 
-                    protegiendo tus datos financieros de posibles amenazas en línea. 
-                    Tus detalles personales y financieros no se comparten con los vendedores</p>
-                </article>
-                <article id="Tarjeta">
-                    <span id="contenedorTextoTarjeta"></span>
-                    <h4>Tarjeta</h4>
-                    <img src="imagenes/pago tarjeta.jpg" alt="imagen logo PayPal">
-                    <p>El proceso es sencillo, se nos pide ingresar los detalles de nuestra tarjeta, 
-                    como el número de tarjeta, la fecha de vencimiento y el código de seguridad. 
-                    Luego, esta información se utiliza para verificar y procesar la transacción</p>
-                    </article>
-                <article id="Efectivo">
-                    <span id="contenedorTextoEfectivo"></span>
-                    <h4>Efectivo</h4>
-                    <img src="imagenes/pago efectivo.jpg" alt="imagen pago en efectivo">
-                    <p>los pagos en efectivo siguen siendo una forma importante de intercambio de valor 
-                    en la sociedad actual. Aunque vivimos en una era digital, el efectivo mantiene su 
-                    relevancia al proporcionar una opción tangible y versátil para nuestras transacciones diarias.</p>
-                    </article>
-                </section>
+
+                <div id="metodoDePago">
+                    <h3>MÉTODO DE PAGO</h3>
+                    <p id="textoIndicacionesFormulario">Selecciona el método de pago que te
+                        sea mas cómodo en base a tus necesidades, puedes dejarlo ya pagado, bien
+                        por tarjeta o bien por Paypal, o pagárselo en efectivo a nuestro repartidor.</p>
+                    <section>
+                        <article id="PayPal">
+                            <span id="contenedorTextoPaypal"></span>
+                            <h4>PayPal</h4>
+                            <img src="imagenes/logo paypal.jpg" alt="imagen logo PayPal">
+                            <p><b><em>PayPal</em></b> es un método muy seguro ya que actúa como intermediario,
+                                protegiendo tus datos financieros de posibles amenazas en línea.
+                                Tus detalles personales y financieros no se comparten con los vendedores</p>
+                        </article>
+                        <article id="Tarjeta">
+                            <span id="contenedorTextoTarjeta"></span>
+                            <h4>Tarjeta</h4>
+                            <img src="imagenes/pago tarjeta.jpg" alt="imagen logo PayPal">
+                            <p>El proceso es sencillo, se nos pide ingresar los detalles de nuestra tarjeta,
+                                como el número de tarjeta, la fecha de vencimiento y el código de seguridad.
+                                Luego, esta información se utiliza para verificar y procesar la transacción</p>
+                        </article>
+                        <article id="Efectivo">
+                            <span id="contenedorTextoEfectivo"></span>
+                            <h4>Efectivo</h4>
+                            <img src="imagenes/pago efectivo.jpg" alt="imagen pago en efectivo">
+                            <p>los pagos en efectivo siguen siendo una forma importante de intercambio de valor
+                                en la sociedad actual. Aunque vivimos en una era digital, el efectivo mantiene su
+                                relevancia al proporcionar una opción tangible y versátil para nuestras transacciones
+                                diarias.</p>
+                        </article>
+                    </section>
                 </div>
                 <div>
                     <input type="submit" value="Enviar" id="enviar">
@@ -124,36 +130,38 @@
     </main>
 
     <aside>
-        <div><h2>Nuestros espacios</h2></div>
+        <div>
+            <h2>Nuestros espacios</h2>
+        </div>
         <div>
             <h3>Salón comedor</h3>
             <img src="imagenes/espacio interior.jpg" alt="imagen espacio interior">
-            <p>Nuestro espacio de comidas y cenas es un lugar donde el buen gusto se 
-            fusiona con la calidez. Con una decoración cuidadosamente seleccionada 
-            que combina elementos modernos y detalles acogedores, este espacio ofrece 
-            un ambiente atractivo que es tanto relajante como acogedor</p>
+            <p>Nuestro espacio de comidas y cenas es un lugar donde el buen gusto se
+                fusiona con la calidez. Con una decoración cuidadosamente seleccionada
+                que combina elementos modernos y detalles acogedores, este espacio ofrece
+                un ambiente atractivo que es tanto relajante como acogedor</p>
         </div>
         <div>
             <h3>Terraza frente al mar</h3>
             <img src="imagenes/espacio terraza.jpg" width="300px" alt="imagen terraza">
-            <p>Nuestra terraza de restaurante de cocteles es un oasis al aire libre 
-            diseñado para deleitar tanto la vista como el paladar. Con un ambiente 
-            chic y contemporáneo, este espacio está cuidadosamente decorado con 
-            mobiliario cómodo y moderno, resaltando colores naturales y toques de 
-            luces tenues que crean una atmósfera íntima y acogedora.</p>
+            <p>Nuestra terraza de restaurante de cocteles es un oasis al aire libre
+                diseñado para deleitar tanto la vista como el paladar. Con un ambiente
+                chic y contemporáneo, este espacio está cuidadosamente decorado con
+                mobiliario cómodo y moderno, resaltando colores naturales y toques de
+                luces tenues que crean una atmósfera íntima y acogedora.</p>
         </div>
         <div>
             <h3>Espacio exclusivo para eventos</h3>
             <img src="imagenes/espacio eventos.jpg" alt="imagen espacio eventos">
-            <p>Independientemente de si estás planeando una boda de ensueño, una 
-            conferencia corporativa o cualquier otro tipo de evento especial, nuestro
-            espacio versátil está diseñado para adaptarse a tus necesidades únicas. 
-            Con una distribución adaptable y un diseño interior amplio, podemos configurar 
-            el área para eventos íntimos o grupos más grandes, asegurando que cada 
-            uno de tus invitados se sienta cómodo y atendido.</p>
+            <p>Independientemente de si estás planeando una boda de ensueño, una
+                conferencia corporativa o cualquier otro tipo de evento especial, nuestro
+                espacio versátil está diseñado para adaptarse a tus necesidades únicas.
+                Con una distribución adaptable y un diseño interior amplio, podemos configurar
+                el área para eventos íntimos o grupos más grandes, asegurando que cada
+                uno de tus invitados se sienta cómodo y atendido.</p>
         </div>
     </aside>
-    
+
     <div class="clearfix"></div>
 
     <footer>
@@ -162,4 +170,5 @@
 
     <script src="script_shopping cart.js"></script>
 </body>
+
 </html>
